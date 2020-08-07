@@ -1,89 +1,298 @@
-@book{McConnell:2004:CCS:1096143,
-	author = {McConnell, Steve},
-	title = {Code Complete, Second Edition},
-	year = {2004},
-	isbn = {0735619670},
-	publisher = {Microsoft Press},
-	address = {Redmond, WA, USA},
+@inproceedings{Zakai2011,
+abstract = {We present Emscripten, a compiler from LLVM (Low Level Virtual Machine) assembly to JavaScript. This opens up two avenues for running code written in languages other than JavaScript on the web: (1) Compile code directly into LLVM assembly, and then compile that into JavaScript using Emscripten, or (2) Compile a language's entire runtime into LLVM and then JavaScript, as in the previous approach, and then use the compiled runtime to run code written in that language. For example, the former approach can work for C and C++, while the latter can work for Python; all three examples open up new opportunities for running code on the web. Emscripten itself is written in JavaScript and is available under the MIT license (a permissive open source license), at http://www.emscripten.org. As a compiler from LLVM to JavaScript, the challenges in designing Emscripten are somewhat the reverse of the norm - one must go from a low-level assembly into a high-level language, and recreate parts of the original high-level structure of the code that were lost in the compilation to low-level LLVM. We detail the methods used in Emscripten to deal with those challenges, and in particular present and prove the validity of Emscripten's Relooper algorithm, which recreates high-level loop structures from low-level branching data.},
+author = {Zakai, Alon},
+booktitle = {SPLASH'11 Compilation - Proceedings of OOPSLA'11, Onward! 2011, GPCE'11, DLS'11, and SPLASH'11 Companion},
+doi = {10.1145/2048147.2048224},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Zakai - 2011 - Emscripten An LLVM-to-JavaScript compiler.pdf:pdf},
+isbn = {9781450309424},
+keywords = {Decompiler,JavaScript,LLVM},
+pages = {301--312},
+title = {{Emscripten: An LLVM-to-JavaScript compiler}},
+year = {2011}
 }
-
-@book{Vandevoorde:2002,
-	author = {Vandevoorde, David and Josuttis, Nicolai M.},
-	day = {22},
-	isbn = {0201734842},
-	month = {November},
-	priority = {2},
-	publisher = {Addison-Wesley Professional},
-	title = {{C++ Templates: The Complete Guide}},
-	year = {2002}
+@article{Protzenko2019,
+abstract = {After suffering decades of high-profile attacks, the need for formal verification of security-critical software has never been clearer. Verification-oriented programming languages like F * are now being used to build high-assurance cryptographic libraries and implementations of standard protocols like TLS. In this paper, we seek to apply these verification techniques to modern Web applications, like WhatsApp, that embed sophisticated custom cryptographic components. The problem is that these components are often implemented in JavaScript, a language that is both hostile to cryptographic code and hard to reason about. So we instead target WebAssembly, a new instruction set that is supported by all major JavaScript runtimes. We present a new toolchain that compiles Low * , a low-level subset of the F * programming language, into WebAssembly. Unlike other WebAssembly compilers like Emscripten, our compilation pipeline is focused on compactness and auditability: we formalize the full translation rules in the paper and implement it in a few thousand lines of OCaml. Using this toolchain, we present two case studies. First, we build WHACL * , a WebAssembly version of the existing, verified HACL * cryptographic library. Then, we present LibSignal*, a brand new, verified implementation of the Signal protocol in WebAssembly, that can be readily used by messaging applications like WhatsApp, Skype, and Signal.},
+author = {Protzenko, Jonathan and Beurdouche, Benjamin and Merigoux, Denis and Bhargavan, Karthikeyan},
+doi = {10.1109/SP.2019.00064ï},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Protzenko et al. - 2019 - Formally Verified Cryptographic Web Applications in WebAssembly(2).pdf:pdf},
+journal = {ieeexplore.ieee.org},
+pages = {1256--1274},
+title = {{Formally Verified Cryptographic Web Applications in WebAssembly}},
+url = {https://hal.inria.fr/hal-02294935},
+year = {2019}
 }
-
-@inproceedings{Mulloni:2010,
- author = {Mulloni, Alessandro and D\"{u}nser, Andreas and Schmalstieg, Dieter},
- title = {Zooming Interfaces for Augmented Reality Browsers},
- booktitle = {Proceedings of the 12th International Conference on Human Computer Interaction with Mobile Devices and Services},
- series = {MobileHCI '10},
- year = {2010},
-  location = {Lisbon, Portugal},
-  doi = {10.1145/1851600.1851629},
-  isbn = {978-1-60558-835-3},
- pages = {161--170},
- numpages = {10},  
- acmid = {1851629},
- publisher = {ACM},
- address = {New York, NY, USA},
- keywords = {mobile augmented reality, zooming interfaces},
-} 
-
-@article{Albanese2004,
-abstract = {The first step in a video indexing process is the segmentation of videos into meaningful parts called shots. In this paper we present a formal model of the video shot segmentation process. Starting from a mathematical characterization of the most common transition effects, a video segmentation algorithm capable to detect both abrupt and gradual transitions is proposed. The proposed algorithm is based on the computation of an arbitrary similarity measure between consecutive frames of a video. The algorithm has been tested adopting a similarity metric based on the Animate Vision theory and results have been reported.},
-author = {Albanese, Massimiliano and Chianese, Angelo and Moscato, Vincenzo and Sansone, Lucio},
-journal = {Multimedia Tools and Applications},
-pages = {253--272},
-volume={24},
-number={3},
-title = {{A Formal Model for Video Shot Segmentation and its Application via Animate Vision}},
-year = {2004}
+@techreport{Lloyd,
+abstract = {Serverless computing platforms provide function(s)-as-a-Service (FaaS) to end users while promising reduced hosting costs, high availability, fault tolerance, and dynamic elasticity for hosting individual functions known as microservices. Serverless Computing environments, unlike Infrastructure-as-a-Service (IaaS) cloud platforms, abstract infrastructure management including creation of virtual machines (VMs), operating system containers, and request load balancing from users. To conserve cloud server capacity and energy, cloud providers allow hosting infrastructure to go COLD, deprovisioning containers when service demand is low freeing infrastructure to be harnessed by others. In this paper, we present results from our comprehensive investigation into the factors which influence microservice performance afforded by serverless computing. We examine hosting implications related to infrastructure elasticity, load balancing, provisioning variation, infrastructure retention, and memory reservation size. We identify four states of serverless infrastructure including: provider cold, VM cold, container cold, and warm and demonstrate how microservice performance varies up to 15x based on these states.},
+author = {Lloyd, Wes and Ramesh, Shruti and Chinthalapati, Swetha and Ly, Lan and Pallickara, Shrideep},
+booktitle = {ieeexplore.ieee.org},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Lloyd et al. - Unknown - Serverless Computing An Investigation of Factors Influencing Microservice Performance.pdf:pdf},
+keywords = {Function-as-a-Service,Provisioning Variation,Resource Management and Performance,Serverless Computing},
+title = {{Serverless Computing: An Investigation of Factors Influencing Microservice Performance}},
+url = {https://ieeexplore.ieee.org/abstract/document/8360324/}
 }
-
-
-@inproceedings{Bosch2014,
-abstract = {Cascading Style Sheets (CSS) is a standard language for stylizing and formatting web documents. Its role in web user experience becomes increasingly important. However, CSS files tend to be designed from a result-driven point of view, without much attention devoted to the CSS file structure as long as it produces the desired results. Furthermore, the rendering intended in the browser is often checked and debugged with a document instance. Style sheets normally apply to a set of documents, therefore modifications added while focusing on a particular instance might affect other documents of the set. We present a first prototype of static CSS semantical analyzer and optimizer that is capable of automatically detecting and removing redundant property declarations and rules. We build on earlier work on tree logics to locate redundancies due to the semantics of selectors and properties. Existing purely syntactic CSS optimizers might be used in conjunction with our tool, for performing complementary (and orthogonal) size reduction, toward the common goal of providing smaller and cleaner CSS files.},
-author = {Bosch, Mart{\'{i}} and Genev{\`{e}}s, Pierre and Laya{\"{i}}ida, Nabil},
-doi = {10.1145/2644866.2644885},
-isbn = {9781450329491},
-journal = {Proceedings of the 2014 ACM Symposium on Document Engineering},
-keywords = {css,debugging,style sheets,web development},
-pages = {13--16},
-title = {{Automated refactoring for size reduction of CSS style sheets}},
+@inproceedings{Haas2017,
+abstract = {The maturation of theWeb platform has given rise to sophisticated and demanding Web applications such as interactive 3D visualization, audio and video software, and games.With that, efficiency and security of code on the Web has become more important than ever. Yet JavaScript as the only builtin language of the Web is not well-equipped to meet these requirements, especially as a compilation target. Engineers from the four major browser vendors have risen to the challenge and collaboratively designed a portable low-level bytecode called WebAssembly. It offers compact representation, efficient validation and compilation, and safe low to no-overhead execution. Rather than committing to a specific programming model, WebAssembly is an abstraction over modern hardware, making it language-, hardware-, and platform-independent, with use cases beyond just the Web. WebAssembly has been designed with a formal semantics from the start. We describe the motivation, design and formal semantics of WebAssembly and provide some preliminary experience with implementations. Copyright is held by the owner/author(s).},
+author = {Haas, Andreas and Rossberg, Andreas and Schuff, Derek L. and Titzer, Ben L. and Holman, Michael and Gohman, Dan and Wagner, Luke and Zakai, Alon and Bastien, J. F.},
+booktitle = {Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+doi = {10.1145/3062341.3062363},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Haas et al. - 2017 - Bringing the web up to speed with WebAssembly.pdf:pdf},
+isbn = {9781450349888},
+keywords = {Assembly languages,Just-in-time compilers,Programming languages,Type systems,Virtual machines},
+month = {jun},
+pages = {185--200},
+publisher = {Association for Computing Machinery},
+title = {{Bringing the web up to speed with WebAssembly}},
+volume = {Part F128414},
+year = {2017}
+}
+@techreport{LetzGRAME2017,
+abstract = {After a first version based on asm.js [4], we show in this paper how the Faust audio DSP language can be used to generate ecient Web Audio nodes based on WebAssem-bly. Two new compiler backends have been developed. The libfaust library version of the compiler has been compiled for the Web, thus allowing to have an ecient compilation chain from Faust DSP sources and libraries to audio nodes directly available in the browser.},
+author = {{Letz GRAME}, St{\'{e}}phane and {Orlarey GRAME}, Yann and {Fober GRAME}, Dominique},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Letz GRAME, Orlarey GRAME, Fober GRAME - 2017 - Compiling Faust audio DSP code to WebAssembly.pdf:pdf},
+keywords = {DSP,Domain Specific Language,Faust,Web Audio API,WebAssembly,audio,real-time},
+title = {{Compiling Faust audio DSP code to WebAssembly}},
+url = {https://bugzilla.mozilla.org/show},
+year = {2017}
+}
+@inproceedings{Vilk2014,
+abstract = {Web browsers have become a de facto universal operating system, and JavaScript its instruction set. Unfortunately, running other languages in the browser is not generally possible. Translation to JavaScript is not enough because browsers are a hostile environment for other languages. Previous approaches are either non-portable or require extensive modifications for programs to work in a browser.
+This paper presents DOPPIO, a JavaScript-based runtime system that makes it possible to run unaltered applications written in generalpurpose languages directly inside the browser. DOPPIO provides a wide range of runtime services, including a file system that enables local and external (cloud-based) storage, an unmanaged heap, sockets, blocking I/O, and multiple threads. We demonstrate DOPPIO's usefulness with two case studies: we extend Emscripten with DOPPIO, letting it run an unmodified C++ application in the browser with full functionality, and present DOPPIOJVM, an interpreter that runs unmodified JVM programs directly in the browser. While substantially slower than a native JVM (between 24× and 42× slower on CPU-intensive benchmarks in Google Chrome), DOPPIOJVM makes it feasible to directly reuse existing, non compute-intensive code. Copyrightc 2014 ACM.},
+author = {Vilk, John and Berger, Emery D.},
+booktitle = {ACM SIGPLAN Notices},
+doi = {10.1145/2594291.2594293},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Vilk, Berger - 2014 - DOPPIO Breaking the browser language barrier.pdf:pdf},
+isbn = {9781450327848},
+issn = {15232867},
+keywords = {Browsers,JVM,JavaScript,Operating systems,Programming languages,Web},
+month = {jun},
+number = {6},
+pages = {508--518},
+publisher = {Association for Computing Machinery},
+title = {{DOPPIO: Breaking the browser language barrier}},
+volume = {49},
 year = {2014}
 }
-
-
-
-@article{Fried2008,
-abstract = {Recently, a debate has begun over whether in-class laptops aid or hinder learning. While some research demonstrates that laptops can be an important learning tool, anecdotal evidence suggests more and more faculty are banning laptops from their classrooms because of perceptions that they distract students and detract from learning. The current research examines the nature of in-class laptop use in a large lecture course and how that use is related to student learning. Students completed weekly surveys of attendance, laptop use, and aspects of the classroom environment. Results showed that students who used laptops in class spent considerable time multitasking and that the laptop use posed a significant distraction to both users and fellow students. Most importantly, the level of laptop use was negatively related to several measures of student learning, including self-reported understanding of course material and overall course performance. The practical implications of these findings are discussed.},
-author = {Fried, Carrie B.},
-journal = {Computers {\&} Education},
-keywords = {Academic Achievement,Attention,Classroom Environment,Classroom Research,College Students,Computers,Student Attitudes,Student Behavior,Student Surveys,Time on Task},
-mendeley-groups = {Education/Computer Science Education},
-number = {3},
-pages = {906--914},
-pmid = {28800271},
-title = {{In-class laptop use and its effects on student learning}},
-volume = {50},
-year = {2008}
+@inproceedings{Ansel2011,
+abstract = {When dealing with dynamic, untrusted content, such as on the Web, software behavior must be sandboxed, typically through use of a language like JavaScript. However, even for such specially-designed languages, it is difficult to ensure the safety of highly-optimized, dynamic language runtimes which, for efficiency, rely on advanced techniques such as Just-In-Time (JIT) compilation, large libraries of native-code support routines, and intricate mechanisms for multi-threading and garbage collection. Each new runtime provides a new potential attack surface and this security risk raises a barrier to the adoption of new languages for creating untrusted content. Removing this limitation, this paper introduces general mechanisms for safely and efficiently sandboxing software, such as dynamic language runtimes, that make use of advanced, low-level techniques like runtime code modification. Our language-independent sandboxing builds on Software-based Fault Isolation (SFI), a traditionally static technique. We provide a more flexible form of SFI by adding new constraints and mechanisms that allow safety to be guaranteed despite runtime code modifications. We have added our extensions to both the x86-32 and x86-64 variants of a production-quality, SFI-based sandboxing platform; on those two architectures SFI mechanisms face different challenges. We have also ported two representative language platforms to our extended sandbox: the Mono common language runtime and the V8 JavaScript engine. In detailed evaluations, we find that sandboxing slowdown varies between different benchmarks, languages, and hardware platforms. Overheads are generally moderate and they are close to zero for some important benchmark/platform combinations. {\textcopyright} 2011 ACM.},
+author = {Ansel, Jason and Marchenko, Petr and Erlingsson, Ulfar and Taylor, Elijah and Chen, Brad and Schuff, Derek L. and Sehr, David and Biffle, Cliff L. and Yee, Bennet},
+booktitle = {Proceedings of the ACM SIGPLAN Conference on Programming Language Design and Implementation (PLDI)},
+doi = {10.1145/1993498.1993540},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Ansel et al. - 2011 - Language-independent sandboxing of just-in-time compilation and self-modifying code.pdf:pdf},
+isbn = {9781450306638},
+keywords = {just-in-time compilation,sandboxing,security,self-modifying code,software fault isolation},
+pages = {355--366},
+title = {{Language-independent sandboxing of just-in-time compilation and self-modifying code}},
+year = {2011}
+}
+@book{Wang,
+abstract = {Serverless computing is an emerging paradigm in which an application's resource provisioning and scaling are managed by third-party services. Examples include AWS Lambda, Azure Functions, and Google Cloud Functions. Behind these services' easy-to-use APIs are opaque, complex infrastructure and management ecosystems. Taking on the viewpoint of a serverless customer, we conduct the largest measurement study to date, launching more than 50,000 function instances across these three services, in order to characterize their architectures, performance, and resource management efficiency. We explain how the platforms isolate the functions of different accounts, using either virtual machines or containers, which has important security implications. We characterize performance in terms of scalability, coldstart latency, and resource efficiency, with highlights including that AWS Lambda adopts a bin-packing-like strategy to maximize VM memory utilization, that severe contention between functions can arise in AWS and Azure, and that Google had bugs that allow customers to use resources for free.},
+author = {Wang, Liang and Li, Mengyuan and Zhang, Yinqian and Ristenpart, Thomas and Swift, Michael},
+booktitle = {usenix.org},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Wang et al. - Unknown - Peeking Behind the Curtains of Serverless Platforms.pdf:pdf},
+isbn = {978-1-939133-02-1},
+title = {{Peeking Behind the Curtains of Serverless Platforms}},
+url = {https://www.usenix.org/conference/atc18/presentation/wang-liang}
+}
+@inproceedings{Konoth2018,
+abstract = {A wave of alternative coins that can be effectively mined without specialized hardware, and a surge in cryptocurrencies' market value has led to the development of cryptocurrency mining (cryptomining) services, such as Coinhive, which can be easily integrated into websites to monetize the computational power of their visitors. While legitimate website operators are exploring these services as an alternative to advertisements, they have also drawn the attention of cybercriminals: drive-by mining (also known as cryptojacking) is a new web-based attack, in which an infected website secretly executes JavaScript code and/or a WebAssembly module in the user's browser to mine cryptocurrencies without her consent. In this paper, we perform a comprehensive analysis on Alexa's Top 1 Million websites to shed light on the prevalence and profitability of this attack. We study the websites affected by drive-by mining to understand the techniques being used to evade detection, and the latest web technologies being exploited to efficiently mine cryptocurrency. As a result of our study, which covers 28 Coinhive-like services that are widely being used by drive-by mining websites, we identified 20 active cryptomining campaigns. Motivated by our findings, we investigate possible countermeasures against this type of attack. We discuss how current blacklisting approaches and heuristics based on CPU usage are insufficient, and present MineSweeper, a novel detection technique that is based on the intrinsic characteristics of cryptomining code, and, thus, is resilient to obfuscation. Our approach could be integrated into browsers to warn users about silent cryptomining when visiting websites that do not ask for their consent.},
+author = {Konoth, Radhesh Krishnan and Vineti, Emanuele and Moonsamy, Veelasha and Lindorfer, Martina and Kruegel, Christopher and Bos, Herbert and Vigna, Giovanni},
+booktitle = {Proceedings of the ACM Conference on Computer and Communications Security},
+doi = {10.1145/3243734.3243858},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Konoth et al. - 2018 - MineSweeper An in-depth look into drive-by cryptocurrency mining and its defense.pdf:pdf},
+isbn = {9781450356930},
+issn = {15437221},
+keywords = {Cryptocurrency,Cryptojacking,Drive-by attacks,Malware,Mining},
+month = {oct},
+pages = {1714--1730},
+publisher = {Association for Computing Machinery},
+title = {{MineSweeper: An in-depth look into drive-by cryptocurrency mining and its defense}},
+year = {2018}
+}
+@techreport{Renner,
+abstract = {As ever more applications are designed to run inside browsers and other JavaScript runtime systems, there is an increasing need for cryptographic primitives that can be used client-side. Unfortunately, implementing cryptographic primitives securely in high-level languages is extremely difficult-runtime system components such as garbage collectors and just-in-time compilers can trivially introduce timing leaks in seemingly secure code. We argue that runtime system designs should be rethought with such applications-applications that demand strong guarantees for the executed code-in mind. As a concrete step towards this goal, we propose changes to the recent WebAssembly language and runtime system, supported by modern browsers. Our Constant-Time WebAssembly enables developers to implement crypto algorithms whose security guarantees will be preserved through compiler optimizations and execution in the browser.},
+author = {Renner, John and Cauligi, Sunjay and Stefan, Deian},
+booktitle = {pdfs.semanticscholar.org},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Renner, Cauligi, Stefan - Unknown - Constant-Time WebAssembly.pdf:pdf},
+title = {{Constant-Time WebAssembly}},
+url = {https://github.com/armmbed/mbedtls.}
+}
+@article{Qiao,
+author = {Qiao, X and Ren, P and Dustdar, S and Liu, L and of the {\ldots}, H Ma - Proceedings and 2019, Undefined},
+file = {:Users/tobiasfranek/Documents/fh/Seminararbeit/work/Web AR- A Promising Future for Mobile Augmented Reality—State of the Art, Challenges, and Insights.pdf:pdf},
+journal = {ieeexplore.ieee.org},
+title = {{Web AR: A Promising Future for Mobile Augmented Reality—State of the Art, Challenges, and Insights}},
+url = {https://ieeexplore.ieee.org/abstract/document/8643424/}
+}
+@article{Powers,
+author = {Powers, B and Vilk, J and Notices, ED Berger - ACM SIGPLAN and undefined 2017},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Powers et al. - Unknown - Browsix Bridging the gap between Unix and the browser.pdf:pdf},
+journal = {dl.acm.org},
+title = {{Browsix: Bridging the gap between Unix and the browser}},
+url = {https://dl.acm.org/doi/abs/10.1145/3093336.3037727}
+}
+@inproceedings{Hall2019,
+abstract = {Serverless computing platforms allow developers to host single-purpose applications that automatically scale with demand. In contrast to traditional long-running applications on dedicated, virtualized, or container-based platforms, serverless applications are intended to be instantiated when called, execute a single function, and shut down when finished. State-of-the-art serverless platforms achieve these goals by creating a new container instance to host a function when it is called and destroying the container when it completes. This design allows for cost and resource savings when hosting simple applications, such as those supporting IoT devices at the edge of the network. However, the use of containers introduces some overhead which may be unsuitable for applications requiring low-latency response or hardware platforms with limited resources, such as those served by edge computing environments. In this paper, we present a nomenclature for characterizing server-less function access patterns which allows us to derive the basic requirements of a serverless computing runtime. We then propose the use of WebAssembly as an alternative method for running serverless applications while meeting these requirements. Finally, we demonstrate how a WebAssembly-based serverless platform provides many of the same isolation and performance guarantees of container-based platforms while reducing average application start times and the resources needed to host them.},
+author = {Hall, Adam and Ramachandran, Umakishore},
+booktitle = {IoTDI 2019 - Proceedings of the 2019 Internet of Things Design and Implementation},
+doi = {10.1145/3302505.3310084},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Hall, Ramachandran - 2019 - An execution model for serverless functions at the edge.pdf:pdf},
+isbn = {9781450362832},
+keywords = {FaaS,edge computing,fog computing,function-as-a-service,serverless,webassembly},
+month = {apr},
+pages = {225--236},
+publisher = {Association for Computing Machinery, Inc},
+title = {{An execution model for serverless functions at the edge}},
+year = {2019}
+}
+@book{Jangda,
+abstract = {All major web browsers now support WebAssembly, a low-level bytecode intended to serve as a compilation target for code written in languages like C and C++. A key goal of Web-Assembly is performance parity with native code; previous work reports near parity, with many applications compiled to WebAssembly running on average 10{\%} slower than native code. However, this evaluation was limited to a suite of scientific kernels, each consisting of roughly 100 lines of code. Running more substantial applications was not possible because compiling code to WebAssembly is only part of the puzzle: standard Unix APIs are not available in the web browser environment. To address this challenge, we build BROWSIX-WASM, a significant extension to BROWSIX [29] that, for the first time, makes it possible to run unmodified WebAssembly-compiled Unix applications directly inside the browser. We then use BROWSIX-WASM to conduct the first large-scale evaluation of the performance of WebAssembly vs. native. Across the SPEC CPU suite of benchmarks, we find a substantial performance gap: applications compiled to WebAssembly run slower by an average of 45{\%} (Firefox) to 55{\%} (Chrome), with peak slowdowns of 2.08× (Firefox) and 2.5× (Chrome). We identify the causes of this performance degradation, some of which are due to missing optimizations and code generation issues, while others are inherent to the WebAssembly platform.},
+author = {Jangda, Abhinav and Powers, Bobby and Berger, Emery D and Guha, Arjun},
+booktitle = {usenix.org},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Jangda et al. - Unknown - Not So Fast Analyzing the Performance of WebAssembly vs. Native Code.pdf:pdf},
+isbn = {978-1-939133-03-8},
+title = {{Not So Fast: Analyzing the Performance of WebAssembly vs. Native Code}},
+url = {https://www.usenix.org/conference/atc19/presentation/jangda}
+}
+@article{Reiser,
+author = {Reiser, M and International, L Bl{\"{a}}ser - Proceedings of the 9th ACM SIGPLAN and undefined 2017},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Reiser, International, 2017 - Unknown - Accelerate JavaScript applications by cross-compiling to WebAssembly.pdf:pdf},
+journal = {dl.acm.org},
+title = {{Accelerate JavaScript applications by cross-compiling to WebAssembly}},
+url = {https://dl.acm.org/doi/abs/10.1145/3141871.3141873}
 }
 
-@techreport{RFC2616,
-  author = {Fielding, Roy T.  and James Gettys and Jeffrey C. Mogul and Henrik Frystyk Nielsen and Larry Masinter and Paul J. Leach and Tim Berners-Lee},
-  title = {Hypertext Transfer Protocol -- HTTP/1.1},
-  howpublished = {Internet Requests for Comments},
-  type = {RFC},
-  number = {2616},
-  year = {1999},
-  issn = {2070-1721},
-  publisher = {RFC Editor},
-  institution = {RFC Editor},
-  url = {http://www.rfc-editor.org/rfc/rfc2616.txt}
+@techreport{Sadaqat2018,
+abstract = {Serverless computing is a cloud computing execution model which enables developers to focus more on business logic rather than on infrastructure or maintenance of servers. This new paradigm has become a source of attraction for developers and organizations alike as it does not only reduce but simply eliminates the overhead of scaling, provisioning and infrastructure altogether. Given the novelty of the phenomenon, this paper is meant to study the phenomenon in a systematic way in order to define the core components of serverless computing, its benefits, challenges and what lies in the foreseen future of the serverless concept. To this end, authors conducted a multivocal literature review in order to better comprehend the state-of-art on serverless computing. The study shows that serverless computing is a solution that allows users to create functions that intercept and operate on data flows in a scalable manner without the need to manage a server, although presents several challenges.},
+author = {Sadaqat, Mubashra and Colomo-Palacios, Ricardo and Emil, Lars and Knudsen, Skrimstad},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Sadaqat et al. - 2018 - SERVERLESS COMPUTING A MULTIVOCAL LITERATURE REVIEW.pdf:pdf},
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{SERVERLESS COMPUTING: A MULTIVOCAL LITERATURE REVIEW}},
+url = {https://hiof.brage.unit.no/hiof-xmlui/handle/11250/2577600},
+year = {2018}
+}
+
+@techreport{Merkel,
+abstract = {Take on "dependency hell" with Docker containers, the lightweight and nimble cousin of VMs. Learn how Docker makes applications portable and isolated by packaging them in containers based on LXC technology. Imagine being able to package an application along with all of its dependencies easily and then run it smoothly in disparate development, test and production environments. That is the goal of the open-source Docker project. Although it is still not officially production-ready, the latest release (0.7.x at the time of this writing) brought Docker another step closer to realizing this ambitious goal. Docker tries to solve the problem of "dependency hell". Modern applications often are assembled from existing components and rely on other services and applications. For example, your Python application might use PostgreSQL as a data store, Redis for caching and Apache as a Web server. Each of these components comes with its own set of dependencies that may conflict with those of other components. By packaging each component and its dependencies, Docker solves the following problems: Conflicting dependencies: need to run one Web site on PHP 4.3 and another on PHP 5.5? No problem if you run each version of PHP in a separate Docker container. Missing dependencies: installing applications in a new environment is a snap with Docker, because all dependencies are packaged along with the application in a container. Platform differences: moving from one distro to another is no longer a problem. If both systems run Docker, the same container will execute without issues. Docker: a Little Background Docker started life as an open-source project at dotCloud, a cloud-centric platform-as-a-service company, in early 2013. Initially, Docker was a natural extension of the technology the company had developed to run its cloud business on thousands of servers. It is written in Go, a statically typed programming language developed by Google with syntax loosely based on C. Fast-forward six to nine months, and the company has hired a new CEO, joined the Linux Foundation, changed its name to Docker Inc., and announced that it is shifting its focus to the development of Docker and the Docker ecosystem. As further indication of Docker's popularity, at the time of this writing, it has been starred on GitHub 8,985 times and has been forked 1,304 times. Figure 1 illustrates Docker's rising popularity in Google searches. I predict that the shape of the past 12 months will be dwarfed by the next 12 months as Docker Inc. delivers the first version blessed for production deployments of containers and the community at large becomes aware of Docker's usefulness. Figure 1. Google Trends Graph for "Docker Software" for Past 12 Months Under the Hood Docker harnesses some powerful kernel-level technology and puts it at our fingertips. The concept of a container in virtualization has been around for several years, but by providing a simple tool set and a unified API for managing some kernel-level technologies, such as LXCs (LinuX Containers), cgroups and a copy-on-write filesystem, Docker has created a tool that is greater than the sum of its parts. The result is a potential game-changer for DevOps, system administrators and developers. Docker provides tools to make creating and working with containers as easy as possible. Containers sandbox processes from each other. For now, you can think of a container as a lightweight equivalent of a virtual machine. Linux Containers and LXC, a user-space control package for Linux Containers, constitute the core of Docker. LXC uses kernel-level namespaces to isolate the container from the host. The user namespace separates the container's and the host's user database, thus ensuring that the container's root user does not have root privileges on the host. The process namespace is responsible for displaying and managing only processes running in the container, not the host. And, the network namespace provides the container with its own network device and virtual IP address. Another component of Docker provided by LXC are Control Groups (cgroups). While namespaces are responsible for isolation between host and container, control groups implement resource accounting and limiting. While allowing Docker to limit the resources being consumed by a container, such as memory, disk space and I/O, cgroups also output lots of metrics about these resources. These metrics allow Docker to monitor the resource consumption of the various processes within the containers and make sure that each gets only its fair share of the available resources. In addition to the above components, Docker has been using AuFS (Advanced Multi-Layered Unification Filesystem) as a filesystem for containers. AuFS is a layered filesystem that can transparently overlay one or more existing filesystems. When a process needs to modify a file, AuFS creates a copy of that file. AuFS is capable of merging multiple layers into a single representation of a filesystem. This process is called copy-on-write.},
+author = {Merkel, Dirk},
+booktitle = {seltzer.com},
+title = {{Docker: Lightweight Linux Containers for Consistent Development and Deployment}},
+url = {http://www.docker.io}
+}
+
+@article{Bryhni,
+author = {Bryhni, H and Klovning, E and Network, O Kure - IEEE and undefined 2000},
+journal = {ieeexplore.ieee.org},
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{A comparison of load balancing techniques for scalable web servers}},
+url = {https://ieeexplore.ieee.org/abstract/document/855480/}
+}
+
+
+@article{Ma,
+author = {Ma, GK and Wu, CS and {M Yang - US Patent 6}, 279,040 and undefined 2001},
+journal = {Google Patents},
+title = {{Scalable architecture for media-on demand servers}},
+url = {https://patents.google.com/patent/US6279040B1/en}
+}
+
+@techreport{Donovan2010,
+author = {Donovan, Alan and Muth, Robert and Chen, Brad and Sehr, David},
+booktitle = {css.csail.mit.edu},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Donovan et al. - 2010 - PNaCl Portable Native Client Executables.pdf:pdf},
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{PNaCl: Portable Native Client Executables}},
+url = {https://css.csail.mit.edu/6.858/2012/readings/pnacl.pdf},
+year = {2010}
+}
+
+@article{Yee2010,
+abstract = {Native Client is a sandbox for untrusted x86 native code. It aims to give browser-based applications the computational performance of native applications without compromising safety. Native Client uses software fault isolation and a secure runtime to direct system interaction and side effects through interfaces it controls. It further provides operating system portability for binary code while supporting performance-oriented features generally absent from Web application programming environments, such as thread support, instruction set extensions such as SSE, and use of compiler intrinsics and hand-coded assembler. We combine these properties in an open architecture that encourages community review and third-party tools.},
+author = {Yee, Bennet and Sehr, David and Dardyk, Gregory and Chen, J Bradley and Muth, Robert and Fullagar, Nicholas},
+doi = {10.1145/1629175.1629203},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Yee et al. - 2010 - Native Client A Sandbox for Portable, Untrusted x86 Native Code.pdf:pdf},
+journal = {| communicATions of THe Acm},
+mendeley-groups = {Seminararbeit Webassembly},
+month = {jan},
+number = {1},
+pages = {91--99},
+title = {{Native Client: A Sandbox for Portable, Untrusted x86 Native Code}},
+url = {https://ieeexplore.ieee.org/abstract/document/5207638/},
+volume = {53},
+year = {2010}
+}
+
+@techreport{Baldini,
+abstract = {Serverless computing has emerged as a new compelling paradigm for the deployment of applications and services. It represents an evolution of cloud programming models, abstractions, and platforms, and is a testament to the maturity and wide adoption of cloud technologies. In this chapter, we survey existing server-less platforms from industry, academia, and open source projects, identify key characteristics and use cases, and describe technical challenges and open problems.},
+archivePrefix = {arXiv},
+arxivId = {1706.03178v1},
+author = {Baldini, Ioana and Castro, Paul and Chang, Kerry and Cheng, Perry and Fink, Stephen and Ishakian, Vatche and Mitchell, Nick and Muthusamy, Vinod and Rabbah, Rodric and Slominski, Aleksander and Suter, Philippe},
+booktitle = {Springer},
+eprint = {1706.03178v1},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Baldini et al. - Unknown - Serverless Computing Current Trends and Open Problems.pdf:pdf},
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{Serverless Computing: Current Trends and Open Problems}},
+url = {https://link.springer.com/chapter/10.1007/978-981-10-5026-8{\_}1}
+}
+
+@article{Muthusamy2017,
+author = {Muthusamy, Vinod and Castro, Paul and Ishakian, Vatche and Slominski, Aleksander},
+doi = {10.1109/ICDCS.2017.305},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Muthusamy et al. - 2017 - Serverless Programming (Function as a Service).pdf:pdf},
+journal = {ieeexplore.ieee.org},
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{Serverless Programming (Function as a Service)}},
+url = {https://www.researchgate.net/publication/318477545},
+year = {2017}
+}
+
+@misc{Shilkov,
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{Cold Starts in AWS Lambda | Mikhail Shilkov}},
+author = {{Mikhail Shilkov}},
+url = {https://mikhail.io/serverless/coldstarts/aws/},
+urldate = {2020-07-04}
+}
+
+@article{VanEyk2017,
+abstract = {Cloud computing enables an entire ecosystem of developing, composing , and providing IT services. An emerging class of cloud-based software architectures, serverless, focuses on providing software architects the ability to execute arbitrary functions with small overhead in server management, as Function-as-a-service (FaaS). However useful, serverless and FaaS suffer from a community problem that faces every emerging technology, which has indeed also hampered cloud computing a decade ago: lack of clear terminology, and scattered vision about the field. In this work, we address this community problem. We clarify the term serverless, by reducing it to cloud functions as programming units, and a model of executing simple and complex (e.g., workflows of) functions with operations managed primarily by the cloud provider. We propose a research vision, where 4 key directions (perspectives) present 17 technical opportunities and challenges.},
+author = {van Eyk, Erwin and Iosup, Alexandru and Delft, Tu and Seif, Simon and Th{\"{o}}mmes, Markus},
+doi = {10.1145/3154847.3154848},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/van Eyk et al. - 2017 - The SPEC Cloud Group's Research Vision on FaaS and Serverless Ar-chitectures.pdf:pdf},
+isbn = {9781450354349},
+journal = {dl.acm.org},
+keywords = {-  Applied computing  -{\textgreater}  Service-oriented architectures,-  Computer systems organization  -{\textgreater}  Cloud computing,-  Software and its engineering  -{\textgreater}  Extra-functional properties,Event-driven architectures},
+mendeley-groups = {Seminararbeit Webassembly},
+pages = {1--4},
+publisher = {Association for Computing Machinery (ACM)},
+title = {{The SPEC Cloud Group's Research Vision on FaaS and Serverless Ar-chitectures}},
+url = {https://doi.org/10.1145/3154847.3154848},
+year = {2017}
+}
+
+@inproceedings{Manner2019,
+abstract = {Today, Serverless computing gathers pace and attention in the cloud computing area. The abstraction of operational tasks combined with the auto-scaling property are convincing reasons to adapt this new cloud paradigm. Building applications in a Serverless style via cloud functions is challenging due to the fine-grained architecture and the tighter coupling to back end services. Increased complexity, loss of control over software layers and the large number of participating functions and back end services complicate the task of finding the cause of a faulty execution. A tedious but widespread strategy is the manual analysis of log data. In this paper, we present a semi-automated troubleshooting process to improve fault detection and resolution for Serverless functions. Log data is the vehicle to enable a posteriori analysis. The process steps of our concept enhance the log quality, detect failed executions automatically, and generate test skeletons based on the information provided in the log data. Ultimately, this leads to an increased test coverage, a better regression testing and more robust functions. Developers can trigger this process asynchronously and work with their accustomed tools. We also present a prototype SeMoDe to validate our approach for Serverless functions implemented in Java and deployed to AWS Lambda.},
+author = {Manner, Johannes and Kolb, Stefan and Wirtz, Guido},
+booktitle = {Software-Intensive Cyber-Physical Systems},
+doi = {10.1007/s00450-019-00398-6},
+issn = {25248529},
+keywords = {AWS Lambda,Debugging,FaaS,Monitoring,Serverless functions,Testing},
+mendeley-groups = {Seminararbeit Webassembly},
+month = {jun},
+number = {2-3},
+pages = {99--104},
+publisher = {Springer},
+title = {{Troubleshooting Serverless functions: a combined monitoring and debugging approach}},
+volume = {34},
+year = {2019}
+}
+
+@techreport{Malawski,
+abstract = {Scientific workflows consisting of a high number of interdependent tasks represent an important class of complex scientific applications. Recently, a new type of serverless infrastructures has emerged, represented by such services as Google Cloud Functions and AWS Lambda, also referred to as the Function-as-a-Service model. In this paper we take a look at such serverless infrastructures, which are designed mainly for processing background tasks of Web and Internet of Things applications, or event-driven stream processing. We evaluate their applicability to more compute-and data-intensive scientific workflows and discuss possible ways to repurpose serverless architectures for execution of scientific workflows. We have developed prototype workflow executor functions using AWS Lambda and Google Cloud Functions, coupled with the HyperFlow workflow engine. These functions can run workflow tasks in AWS and Google infrastructures, and feature such capabilities as data staging to/from S3 or Google Cloud Storage and execution of custom application binaries. We have successfully deployed and executed the Montage astronomy workflow, often used as a benchmark, and we report on initial results of its performance evaluation. Our findings indicate that the simple mode of operation makes this approach easy to use, although there are costs involved in preparing portable application binaries for execution in a remote environment. While our solution is an early prototype, we find the presented approach highly promising. We also discuss possible future steps related to execution of scientific workflows in serverless infrastructures. Finally, we perform a cost analysis and discuss implications with regard to resource management for scientific applications in general.},
+author = {Malawski, Maciej and Gajek, Adam and Zima, Adam and Balis, Bartosz and Figiela, Kamil},
+booktitle = {Elsevier},
+file = {:Users/tobiasfranek/Library/Application Support/Mendeley Desktop/Downloaded/Malawski et al. - Unknown - Serverless Execution of Scientific Workflows Experiments with HyperFlow, AWS Lambda and Google Cloud Functio.pdf:pdf},
+keywords = {FaaS,Scientific workflows,cloud functions,serverless architectures},
+mendeley-groups = {Seminararbeit Webassembly},
+title = {{Serverless Execution of Scientific Workflows: Experiments with HyperFlow, AWS Lambda and Google Cloud Functions}},
+url = {https://www.sciencedirect.com/science/article/pii/S0167739X1730047X}
 }
